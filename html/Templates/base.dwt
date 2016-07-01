@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<!-- TemplateParam name="title" type="text" value="ページタイトル" -->
+<!-- TemplateParam name="robots" type="text" value="index,follow" -->
+<!-- TemplateParam name="category" type="text" value="" -->
+<title>@@(title)@@ | 会社名</title>
+<!-- TemplateBeginEditable name="docmeta" -->
+<meta name="keyword" content="キーワード">
+<meta name="description" content="ページ内容の説明文をここに入力します。">
+<!-- TemplateEndEditable -->
+<meta name="robots" content="@@(robots)@@">
+<link rel="shortcut icon" href="/favicon.ico" >
+<!--[if lt IE 9]>
+<script src="/common/js/html5shiv.min.js"></script>
+<![endif]-->
+<link href="../common/css/reset.css" rel="stylesheet" type="text/css">
+<link href="../common/css/module.css" rel="stylesheet" type="text/css">
+<link href="../common/css/responsive.css" rel="stylesheet" type="text/css">
+<link href="../common/css/style.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<script src="../common/js/ga.js"></script>
+</head>
+
+<body>
+<div id="container">
+<header>
+<div class="wrapper">
+<div id="headerLogo">ロゴ</div>
+</div>
+</header>
+
+
+<nav id="gnav" class="clearfix">
+<ul>
+<li id="gnav_home"><a href="../">HOME</a></li>
+<li id="gnav_service"><a href="../service/">サービス</a></li>
+<li id="gnav_company"><a href="../company/">会社情報</a></li>
+<li id="gnav_contact"><a href="../contact/">お問い合わせ</a></li>
+</ul>
+<!-- /gnav --></nav>
+
+<!-- TemplateBeginIf cond="category=='top'" -->
+トップ用Visual
+<!-- TemplateEndIf -->
+<!-- TemplateBeginIf cond="category!='top'" -->
+トップ以外用Visual
+<!-- TemplateEndIf -->
+
+<div id="content">
+<!-- TemplateBeginIf cond="category!='top'" -->
+<div id="topicsPath"><a href="/">ホーム</a><!-- TemplateBeginEditable name="topicsPathDivision" --><a>></a><a href="../">親ページ</a><!-- TemplateEndEditable --><a>></a><a>@@(title)@@</a></div>
+<!-- TemplateEndIf -->
+<div id="main">
+コンテンツ領域
+<!-- /main --></div>
+<!-- /content --></div>
+
+<div id="btnPageTop"><a href="#pagetop">ページトップへ</a></div>
+
+<footer>
+<div class="wrapper">
+フッター領域
+<nav class="clearfix">
+<ul>
+<li>HOME</li>
+<li>サービス</li>
+<li>会社情報</li>
+<li>お問い合わせ</li>
+</ul>
+</nav>
+<!-- /wrapper --></div>
+<div id="copyright">Copyright &copy; 会社名 All Rights Reserved.</div>
+</footer>
+<!-- /container --></div>
+<script src="../common/js/jquery-1.11.0.min.js"></script>
+<script src="../common/js/respond.min.js"></script>
+<script src="../common/js/custom.js"></script>
+</body>
+</html>
